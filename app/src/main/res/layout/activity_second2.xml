@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#242A40"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:id="@+id/tol"
+        android:gravity="center"
+        android:background="@drawable/back_liner"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/record"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:text="Math Quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:text="Records"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_menu1"
+        app:layout_constraintWidth_percent="0.94"
+        app:layout_constraintHeight_percent="0.12"
+        android:id="@+id/record"
+        app:layout_constraintTop_toBottomOf="@id/tol"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/add_question"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn_menu"
+        android:text="Add Question"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintWidth_percent="0.45"
+        android:textColor="@color/white"
+        app:layout_constraintHeight_percent="0.12"
+        android:id="@+id/add_question"
+        app:layout_constraintTop_toBottomOf="@id/record"
+        app:layout_constraintRight_toLeftOf="@id/subtract_question"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/multiply_question"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Subtract Question"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_menu"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.12"
+        android:id="@+id/subtract_question"
+        app:layout_constraintTop_toTopOf="@id/add_question"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/add_question"
+        app:layout_constraintBottom_toBottomOf="@id/add_question"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Divide Question"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_menu"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.12"
+        android:id="@+id/divide_question"
+        app:layout_constraintTop_toTopOf="@id/multiply_question"
+        app:layout_constraintRight_toLeftOf="@id/multiply_question"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/multiply_question"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Multiply Question"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_menu"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.12"
+        android:id="@+id/multiply_question"
+        app:layout_constraintTop_toBottomOf="@id/add_question"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/divide_question"
+        app:layout_constraintBottom_toTopOf="@id/about_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:text="About"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn_menu1"
+        app:layout_constraintWidth_percent="0.94"
+        app:layout_constraintHeight_percent="0.12"
+        android:id="@+id/about_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/multiply_question"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

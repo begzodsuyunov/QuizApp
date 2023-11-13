@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="24dp"
+    android:gravity="center"
+    android:background="@drawable/dialog_finish"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:text="Finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="24dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:gravity="end"
+                android:text="Number of questions: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:paddingVertical="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Number of correct answers: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/total_count"
+                android:paddingVertical="5dp"
+                android:textColor="#0AC41A"
+                android:textSize="18sp"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:id="@+id/right_answer"
+                android:paddingVertical="5dp"
+                android:textColor="#0AC41A"
+                android:textSize="18sp"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/finish"
+            android:text="Finish"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_dialog"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/restart"
+            android:text="Rstart"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_dialog1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
